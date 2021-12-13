@@ -2,6 +2,15 @@ p {
     font-size: 1.2em;
 }
 
+a {
+    color: white;
+}
+
+a:hover {
+    color: #d9d9d9;
+    font-weight: normal!important;
+}
+
 .apresentacao {
     height: 49rem;
     width: 100.6%;
@@ -50,7 +59,7 @@ $transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
     transform: translate3d(0, 0, 0);
     width: 60vw;
 
-    .c-glitch:hover &:nth-child(n + 2) {
+    .c-glitch &:nth-child(n + 2) {
         animation-duration: 2s;
         animation-delay: 0;
         animation-timing-function: linear;
@@ -58,19 +67,19 @@ $transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
         animation-fill-mode: forwards;
     }
 
-    .c-glitch:hover &:nth-child(2) {
+    .c-glitch &:nth-child(2) {
         animation-name: glitch-anim-1;
     }
 
-    .c-glitch:hover &:nth-child(3) {
+    .c-glitch &:nth-child(3) {
         animation-name: glitch-anim-2;
     }
 
-    .c-glitch:hover &:nth-child(4) {
+    .c-glitch &:nth-child(4) {
         animation-name: glitch-anim-3;
     }
 
-    .c-glitch:hover &:nth-child(5) {
+    .c-glitch &:nth-child(5) {
         animation-name: glitch-anim-4;
         background-blend-mode: overlay;
     }
