@@ -26,6 +26,17 @@ footer {
     background-color: $grey;
 }
 
+a {
+    text-decoration: none !important;
+    color: $grey
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: $blue;
+    font-weight: bold;
+}
+
 footer a {
     text-decoration: none !important;
     color: #d3d7db;
@@ -34,6 +45,7 @@ footer a {
 footer a:hover {
     text-decoration: none !important;
     color: $yellow;
+    font-weight: normal;
 }
 
 .btn-warning {

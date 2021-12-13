@@ -1,10 +1,14 @@
 <header>
-  <div class="navbar bg-white pb-3 pt-3">
+  <div class="navbar bg-white">
     <div class="container d-flex justify-content-between">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <i class="fas fa-hat-cowboy text-dark"></i>
+      <a href="#" class="navbar-brand d-flex align-items-center" (click)="scrollToTop()">
+        <img id="navbar-logo" alt="Taura Security">
       </a>
-      <div class="float-right">Teste</div>
+      <div class="float-right">
+        <span><a href="#sobre">Sobre Nós</a></span>
+        <span><a href="#servicos">Serviços</a></span>
+        <span><a href="#contato">Contato</a></span>
+      </div>
     </div>
   </div>
 </header>

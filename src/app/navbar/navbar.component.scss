@@ -1,0 +1,13 @@
+#navbar-logo {
+    content: url('../../assets/img/logo.png');
+    width: 30%;
+}
+
+#navbar-logo .scrolled {
+    content: url('../../assets/img/cachorro.png');
+    transition: background-image 200ms linear;
+}
+
+.float-right span {
+    padding-right: 1.5rem;
+}
