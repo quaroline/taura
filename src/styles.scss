@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+$yellow: #ffc107;
+
+footer a {
+    text-decoration: none !important;
+    color: #d3d7db;
+}
+
+footer a:hover {
+    text-decoration: none !important;
+    color: $yellow;
+}
