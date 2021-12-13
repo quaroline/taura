@@ -1,0 +1,28 @@
+p {
+    font-size: 1.2em;
+}  
+
+#apresentacao_imagem {
+    background-color: #000;
+    background-image: url('../../assets/img/laptop.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.apresentacao {
+    height: 49rem;
+    width: 100.6%;
+}
+
+.relative {
+    position: relative;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

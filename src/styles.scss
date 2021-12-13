@@ -1,5 +1,24 @@
 $yellow: #ffc107;
 
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+::-moz-selection { background: $yellow; }
+::selection { background: $yellow; }
+
+footer *:not(a) {
+    cursor: default!important;
+}
+
 footer a {
     text-decoration: none !important;
     color: #d3d7db;
