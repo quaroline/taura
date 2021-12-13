@@ -1,4 +1,7 @@
-$yellow: #ffc107;
+$yellow: #ff5400;
+$blue: #071a66;
+$lightGrey: #d9d9d9;
+$grey: #333;
 
 body {
     font-family: 'Mulish', sans-serif;
@@ -12,11 +15,15 @@ h1 {
     font-size: 3em;
 }
 
-::-moz-selection { background: $yellow; }
-::selection { background: $yellow; }
+::-moz-selection { background: $blue; color: white; }
+::selection { background: $blue; color: white; }
 
 footer *:not(a) {
     cursor: default!important;
+}
+
+footer {
+    background-color: $grey;
 }
 
 footer a {
@@ -27,4 +34,18 @@ footer a {
 footer a:hover {
     text-decoration: none !important;
     color: $yellow;
+}
+
+.btn-warning {
+    background-color: #071a66!important;
+    color: white;
+}
+
+.btn-warning:hover {
+    color: $lightGrey;
+}
+
+#copyright {
+    font-size: 0.8em;
+    color: $lightGrey;
 }
