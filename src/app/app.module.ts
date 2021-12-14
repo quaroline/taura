@@ -7,6 +7,8 @@ import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ClientesComponent } from './clientes/clientes.component';
 import { ServicosComponent } from './servicos/servicos.component';
+import { ContatoComponent } from './contato/contato.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { ServicosComponent } from './servicos/servicos.component';
     NavbarComponent,
     ApresentacaoComponent,
     ClientesComponent,
-    ServicosComponent
+    ServicosComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

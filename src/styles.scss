@@ -7,6 +7,10 @@ body {
     font-family: 'Mulish', sans-serif;
 }
 
+p, span, h1, h2, h3, h4, h5  {
+    cursor: default;
+}
+
 h1, h2, h3 {
     font-family: 'Signika Negative', sans-serif;
 }
@@ -51,10 +55,12 @@ footer a:hover {
 .btn-warning {
     background-color: #071a66!important;
     color: white;
+    border-color: white;
 }
 
 .btn-warning:hover {
     color: $lightGrey;
+    border-color: white;
 }
 
 #copyright {
