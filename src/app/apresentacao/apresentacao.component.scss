@@ -36,6 +36,7 @@ $transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 
 .c-glitch,
 .c-glitch__img {
+    background-size: 70%!important;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
