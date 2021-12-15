@@ -31,6 +31,10 @@ span {
     position: absolute;
     z-index: 1;
 }
+
+.d-flex-2 {
+    display: flex!important;
+}
   
 .tooltip:hover .tooltiptext {
     visibility: visible;
@@ -51,26 +55,8 @@ span {
     white-space: pre-line;
 }
 
-@media (min-width: 576px) {
-    .card-columns {
-        column-count: 2;
-    }
-}
-
-@media (min-width: 768px) {
-    .card-columns {
-        column-count: 3;
-    }
-}
-
-@media (min-width: 992px) {
-    .card-columns {
-        column-count: 4;
-    }
-}
-
-@media (min-width: 1200px) {
-    .card-columns {
-        column-count: 5;
+@media (max-width: 768px) {
+    .d-flex-2 {
+        display: block!important;
     }
 }
