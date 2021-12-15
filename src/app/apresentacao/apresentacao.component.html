@@ -2,7 +2,7 @@
     <div class="col-md-2"></div>
     <div class="col-md-3 relative">
         <div class="vertical-center">
-            <h1><b>Sobre Nós</b></h1>
+            <h2><b>Sobre Nós</b></h2>
             <p>
                 Somos uma empresa de segurança da informação, focada em proteger o novo mundo da tecnologia, 
                 ajudando nossos clientes a identificarem seus riscos e mitigá-los da melhor maneira.
@@ -11,11 +11,17 @@
                 Possuímos como diferencial, profissionais com <i>expertise</i> em modelos de infraestrutura e 
                 arquiteturas que utilizam as principais tecnologias de ponta do mercado.
             </p>
-            <button class="btn btn-warning btn-lg">
-                <a href="#servicos">
-                    Saiba mais 
-                </a> 
-            </button>
+            <br>
+            <div class="text-center">
+                <h5><b>Nossas certificações</b></h5>
+                <br>
+                <img 
+                    src="../../assets/img/{{ certificacao.arquivo }}.png" 
+                    [alt]="certificacao.nome" 
+                    [title]="certificacao.nome" 
+                    [ngStyle]="props"
+                    *ngFor="let certificacao of certificacoes">
+            </div>
         </div>
     </div>
     <div class="col-md-7" id="apresentacao_imagem">

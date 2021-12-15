@@ -12,6 +12,7 @@ export class ServicosComponent implements OnInit {
   servicos: any[] = [
     {
       titulo: 'Treinamentos',
+      icone: 'far fa-address-card',
       descricao: 'Preparação de profissionais nos pilares:',
       itens: `- Segurança em AWS
               - Boas práticas de segurança em CI/CD
