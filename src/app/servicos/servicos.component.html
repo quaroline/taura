@@ -1,48 +1,23 @@
 <br><br>
 <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-10">
-        <div class="mb-1">
-            <h1><b>Nossos Serviços</b></h1>
-            <hr>
-            <br>
-        </div>
+    <div class="col-md-12 text-center">
+        <h2><b>Nossos Serviços</b></h2>
     </div>
 </div>
-<div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-4">
-        <h2>
-            <i class="fas fa-shield-alt icones-grandes"></i>
-            AWS Security
-        </h2>
-        <span>
-            - Apoio em novos projetos e <i>assessment</i> de segurança em arquiteturas<br>
-            - Criação de estrutura de resposta à incidentes<br>
-            - Apoio em estruturação e implementação de segurança em CI/CD 
-            <span class="tooltip">
-                <i class="far fa-question-circle"></i>
-                <span class="tooltiptext">DevSecOPS</span>
-            </span><br>
-            - Treinamentos de segurança em AWS<br>
-            - Treinamento de boas práticas de segurança em CI/CD
-            <span class="tooltip">
-                <i class="far fa-question-circle"></i>
-                <span class="tooltiptext">DevSecOPS</span>
-            </span><br>
-        </span>
+<div class="col d-flex justify-content-center">
+
+    <div class="card" *ngFor="let servico of servicos">
+        <div class="card-body">
+            <div class="text-center">
+                <h5 class="text-center card-title">
+                    <b>
+                        <i *ngIf="servico.icone" class="{{ servico.icone }}"></i>
+                        {{ servico.titulo }}
+                    </b>
+                </h5>
+                <p class="card-text">{{ servico.descricao }}</p>
+            </div>
+            <p *ngIf="servico.itens" class="card-text pt-2">{{ servico.itens }}</p>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>
-            <i class="fas fa-user-secret icones-grandes"></i>
-            Offensive Security
-        </h2>
-        <span>
-            - Teste de intrusão em aplicações (<i>web</i>, APIs, <i>mobile</i>, etc)<br>
-            - Treinamento de desenvolvimento seguro<br>
-            - Gestão de vulnerabilidades<br>
-            - Técnicas avançadas de <i>pentest</i>
-        </span>
-    </div>
-    <div class="col-md-2"></div>
 </div>

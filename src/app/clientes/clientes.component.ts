@@ -12,7 +12,7 @@ export class ClientesComponent implements OnInit {
   clientes = [
     { nome: 'FIAP', arquivo: 'fiap.png' },
     { nome: 'Flipkick Cloud Experts', arquivo: 'flipkick.png' },
-    { nome: 'Claro', arquivo: 'claro.png' },
+    { nome: 'Tumim7', arquivo: 'tumim7.png' },
     { nome: 'DOCK', arquivo: 'dock.png' },
     { nome: 'HGV Sistemas', arquivo: 'hgv.png' }
   ];

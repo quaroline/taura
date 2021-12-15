@@ -9,6 +9,7 @@ import { ClientesComponent } from './clientes/clientes.component';
 import { ServicosComponent } from './servicos/servicos.component';
 import { ContatoComponent } from './contato/contato.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CertificacoesComponent } from './certificacoes/certificacoes.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ApresentacaoComponent,
     ClientesComponent,
     ServicosComponent,
-    ContatoComponent
+    ContatoComponent,
+    CertificacoesComponent
   ],
   imports: [
     BrowserModule,
