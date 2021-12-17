@@ -7,6 +7,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "taura": {
+      "i18n": {
+        "sourceLocale": "pt",
+        "locales": {
+          "en": "src/locale/messages.en.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -39,6 +45,13 @@
             "scripts": []
           },
           "configurations": {
+            "en": {
+              "index": { 
+                "input": "src/index-en.html", 
+                "output":"index.html" 
+              },
+              "localize": ["en"]
+            },
             "production": {
               "budgets": [
                 {
@@ -76,6 +89,9 @@
           "configurations": {
             "production": {
               "browserTarget": "taura:build:production"
+            },
+            "en": {
+              "browserTarget": "taura:build:en"
             },
             "development": {
               "browserTarget": "taura:build:development"
