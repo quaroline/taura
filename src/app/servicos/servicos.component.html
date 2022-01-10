@@ -7,16 +7,18 @@
 <div class="col d-flex-2 justify-content-center">
     <div class="card" *ngFor="let servico of servicos">
         <div class="card-body">
-            <div class="text-center">
-                <h5 class="text-center card-title">
-                    <b>
-                        <i *ngIf="servico.icone" style="color:#ff5400;" class="{{ servico.icone }}"></i>
-                        {{ servico.titulo }}
-                    </b>
-                </h5>
-                <p class="card-text">{{ servico.descricao }}</p>
-            </div>
+            <h5 class="text-center card-title">
+                <b>
+                    {{ servico.titulo }}
+                </b>
+            </h5>
+            <p class="card-text">{{ servico.descricao }}</p>
             <p *ngIf="servico.itens" class="card-text pt-2">{{ servico.itens }}</p>
+        </div>
+        <div class="card-footer">
+            <div class="text-center">
+                <i *ngIf="servico.icone" style="color:#ff5400;" class="{{ servico.icone }} icones-grandes"></i>
+            </div>
         </div>
     </div>
 </div>

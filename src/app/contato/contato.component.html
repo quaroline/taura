@@ -12,10 +12,10 @@
     <div class="col-md-4 form">
         <form [formGroup]="fg" (submit)="enviarEmail()">
             <div class="form-group">
-                <input type="text" class="form-control" i18n-placeholder="Seu nome" formControlName="nome">
+                <input type="text" class="form-control" i18n-placeholder="Seu nome" placeholder="Nome" formControlName="nome">
             </div>
             <div class="form-group mt-2">
-              <input type="email" class="form-control" aria-describedby="emailHelp" i18n-placeholder="Seu e-mail" formControlName="email">
+              <input type="email" class="form-control" aria-describedby="emailHelp" i18n-placeholder="Seu e-mail" placeholder="E-mail" formControlName="email">
               <small id="emailHelp" class="form-text text-muted" i18n>Nunca compartilharemos seu e-mail com mais ninguém.</small>
             </div>
             <div class="form-group mt-3">

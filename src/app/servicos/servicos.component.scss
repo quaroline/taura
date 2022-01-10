@@ -1,8 +1,9 @@
 $blue: #071a66;
 $orange: #ff5400;
+$light-gray: #f8f8f8;
 
 .icones-grandes {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: $blue;
 }
 
@@ -12,24 +13,6 @@ hr {
 
 span {
     font-size: 1.1rem;
-}
-
-.tooltip {
-    position: relative;
-    display: contents;
-}
-  
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: $blue;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 0.5rem 0;
-    margin-right: 0.5rem;
-    position: absolute;
-    z-index: 1;
 }
 
 .d-flex-2 {
@@ -45,10 +28,46 @@ span {
     font-size: 1rem;
 }
 
+.card-footer {
+    background-color: $light-gray;
+    border: 0;
+    margin-bottom: 1rem;
+}
+
 .card {
     display: inline-block!important;
     max-width: 20rem;
-    margin: 0 1rem 1rem 0;
+    margin: 0 1.5rem 1.5rem 0;
+    background-color: $light-gray;
+    border: 0;
+    border-radius: 5px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.3s ease-in-out;
+    height: fit-content;
+}
+
+.card::after {
+    content: "";
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card:hover {
+    -webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+}
+  
+.card:hover::after {
+    opacity: 1;
 }
 
 .card-text {

@@ -21,8 +21,9 @@ export class ServicosComponent implements OnInit {
     { 
       titulo: 'DevSecOps', 
       icone: 'fas fa-shield-alt',
+      width: '20rem',
       descricao: $localize`Implementação de segurança e apoio em melhorias em ambientes com modelos de desenvolvimento e entrega continua (CI/CD - Devops), atuando com foco em:`,
-      itens: $localize`- Estruturação e implementação de segurança em esteiras de desenvolvimento (CI/CD) 
+      itens: $localize`- Estruturação de segurança em esteiras de desenvolvimento (CI/CD) 
               - Análise de segurança em novos projetos e assessment de segurança em arquiteturas
               - Criação de estrutura de resposta à incidentes automatizadas em recursos AWS`
     },
@@ -34,6 +35,10 @@ export class ServicosComponent implements OnInit {
   ];
 
   ngOnInit(): void {
+  }
+
+  mouseOver(event: any): void {
+    console.log("Teste")
   }
 
 }
