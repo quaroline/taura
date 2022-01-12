@@ -2,16 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { ClientesComponent } from './clientes/clientes.component';
-import { ServicosComponent } from './servicos/servicos.component';
-import { ContatoComponent } from './contato/contato.component';
+import { ApresentacaoComponent } from './components/apresentacao/apresentacao.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { ClientesComponent } from './components/clientes/clientes.component';
+import { ServicosComponent } from './components/servicos/servicos.component';
+import { ContatoComponent } from './components/contato/contato.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { WpServicosComponent } from './wp-servicos/wp-servicos.component';
+import { WpServicosComponent } from './pages/wp-servicos/wp-servicos.component';
 import { RouterModule, Routes } from '@angular/router';
-import { WpErrorComponent } from './wp-error/wp-error.component';
-import { WpHomeComponent } from './wp-home/wp-home.component';
+import { WpErrorComponent } from './pages/wp-error/wp-error.component';
+import { WpHomeComponent } from './pages/wp-home/wp-home.component';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 
 const routes: Routes = [
   { path: '', component: WpHomeComponent },
@@ -34,6 +35,7 @@ const routes: Routes = [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    IvyCarouselModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
