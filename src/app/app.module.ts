@@ -36,7 +36,9 @@ const routes: Routes = [
     AppRoutingModule,
     ReactiveFormsModule,
     IvyCarouselModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, {
+      anchorScrolling: 'enabled'
+    })
   ],
   providers: [],
   exports: [RouterModule],
