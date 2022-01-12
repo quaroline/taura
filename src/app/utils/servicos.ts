@@ -5,9 +5,9 @@ export abstract class Servicos {
           icone: 'far fa-address-card',
           descricao: $localize`Preparação de profissionais nos pilares de segurança em AWS, boas práticas de segurança em CI/CD e desenvolvimento seguro`,
           descricao_completa: $localize`Preparação de profissionais nos pilares:`,
-          itens: $localize`- Segurança em AWS
-              - Boas práticas de segurança em CI/CD
-              - Desenvolvimento seguro`
+          itens: [ $localize`Segurança em AWS`,
+            $localize`Boas práticas de segurança em CI/CD`,
+            $localize`Desenvolvimento seguro`]
         },
         { 
           titulo: 'DevSecOps', 
@@ -15,9 +15,9 @@ export abstract class Servicos {
           width: '20rem',
           descricao: $localize`Implementação de segurança e apoio em melhorias em ambientes com modelos de desenvolvimento e entrega continua (CI/CD - Devops)`,
           descricao_completa: $localize`Implementação de segurança e apoio em melhorias em ambientes com modelos de desenvolvimento e entrega continua (CI/CD - Devops), atuando com foco em:`,
-          itens: $localize`- Estruturação de segurança em esteiras de desenvolvimento (CI/CD) 
-              - Análise de segurança em novos projetos e assessment de segurança em arquiteturas
-              - Criação de estrutura de resposta à incidentes automatizadas em recursos AWS`
+          itens: [ $localize`Estruturação de segurança em esteiras de desenvolvimento (CI/CD)`,
+            $localize`Análise de segurança em novos projetos e assessment de segurança em arquiteturas`,
+            $localize`Criação de estrutura de resposta à incidentes automatizadas em recursos AWS` ]
         },
         {
           titulo: 'Offensive Security',

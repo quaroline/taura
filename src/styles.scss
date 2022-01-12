@@ -1,4 +1,4 @@
-$yellow: #ff5400;
+$orange: #ff5400;
 $blue: #071a66;
 $lightGrey: #d9d9d9;
 $grey: #333;
@@ -68,7 +68,7 @@ footer a {
 
 footer a:hover {
     text-decoration: none !important;
-    color: $yellow;
+    color: $orange;
     font-weight: normal;
 }
 
@@ -90,6 +90,18 @@ footer a:hover {
 
 hr {
     color: rgb(90, 90, 90);
+}
+
+.carousel-dot-active {
+    background-color: $orange!important;
+}
+
+.carousel-dot {
+    border-color: $orange!important;
+}
+
+.carousel-dots {
+    background-color: white!important;
 }
 
 @media (max-width: 767px) {

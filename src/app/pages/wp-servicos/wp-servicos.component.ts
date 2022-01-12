@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Servicos } from 'src/app/utils/servicos';
 
 @Component({
   selector: 'app-wp-servicos',
@@ -9,7 +10,8 @@ export class WpServicosComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  servicos = Servicos.servicos;
+
+  ngOnInit(): void {}
 
 }
