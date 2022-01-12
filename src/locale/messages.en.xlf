@@ -4,138 +4,179 @@
     <body>
       <trans-unit id="7791828851586957238" datatype="html">
         <source>Sobre Nós</source>
-				<target>About Us</target>
+        <target>About Us</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/apresentacao/apresentacao.component.html</context>
+          <context context-type="sourcefile">src/app/components/apresentacao/apresentacao.component.html</context>
           <context context-type="linenumber">5</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
           <context context-type="linenumber">8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3427331832445519287" datatype="html">
-        <source> Somos uma empresa de segurança da informação, focada em proteger o novo mundo da tecnologia, ajudando nossos clientes a identificar seus riscos e mitigá-los da melhor maneira. </source>
-				<target> We are an information security company, focused on protecting the new world of technology, helping our customers to identify their risks and mitigate them in the best way. </target>
+        <source> Somos uma empresa de segurança da informação, focada em proteger o novo mundo da tecnologia, ajudando nossos clientes a identificarem seus riscos e mitigá-los da melhor maneira. </source>
+        <target> We are an information security company, focused on protecting the new world of technology, helping our customers to identify their risks and mitigate them in the best way. </target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/apresentacao/apresentacao.component.html</context>
+          <context context-type="sourcefile">src/app/components/apresentacao/apresentacao.component.html</context>
           <context context-type="linenumber">6,9</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7290507654783041775" datatype="html">
         <source> Possuímos como diferencial, profissionais com <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>expertise<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> em modelos de infraestrutura e arquiteturas que utilizam as principais tecnologias de ponta do mercado. </source>
-				<target> We have as a differential, professionals with expertise in infrastructure models and architectures that use the main cutting-edge technologies in the market. </target>
+        <target> We have as a differential, professionals with expertise in infrastructure models and architectures that use the main cutting-edge technologies in the market. </target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/apresentacao/apresentacao.component.html</context>
+          <context context-type="sourcefile">src/app/components/apresentacao/apresentacao.component.html</context>
           <context context-type="linenumber">10,13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="725290234647652696" datatype="html">
         <source>Confiados por</source>
-				<target>Trusted by</target>
+        <target>Trusted by</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/clientes/clientes.component.html</context>
+          <context context-type="sourcefile">src/app/components/clientes/clientes.component.html</context>
           <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1236061678414703716" datatype="html">
         <source>Contato</source>
-				<target>Contact Us</target>
+        <target>Contact Us</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/contato/contato.component.html</context>
+          <context context-type="sourcefile">src/app/components/contato/contato.component.html</context>
           <context context-type="linenumber">6</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
           <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="2332180001770133395" datatype="html">
+        <source>Nome</source>
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contato/contato.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">Seu nome</note>
+      </trans-unit>
       <trans-unit id="6075213596085819083" datatype="html">
         <source>Nunca compartilharemos seu e-mail com mais ninguém.</source>
-				<target>We'll never share your email with anyone else.</target>
+        <target>We'll never share your email with anyone else.</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/contato/contato.component.html</context>
+          <context context-type="sourcefile">src/app/components/contato/contato.component.html</context>
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="694948794435694063" datatype="html">
         <source>Enviar mensagem</source>
-				<target>Send message</target>
+        <target>Send message</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/contato/contato.component.html</context>
+          <context context-type="sourcefile">src/app/components/contato/contato.component.html</context>
           <context context-type="linenumber">24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2659389714592172771" datatype="html">
         <source>Serviços</source>
-				<target>Services</target>
+        <target>Services</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
           <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1945882561107428880" datatype="html">
         <source>Nossos Serviços</source>
-				<target>Our Provided Services</target>
+        <target>Our Provided Services</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/servicos/servicos.component.html</context>
+          <context context-type="sourcefile">src/app/components/servicos/servicos.component.html</context>
           <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3621976955062663862" datatype="html">
+        <source>Página não encontrada</source>
+        <source>Not Found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/wp-error/wp-error.component.html</context>
+          <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4702980276887303214" datatype="html">
         <source>Treinamentos</source>
-				<target>Training</target>
+        <source>Trainings</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/servicos/servicos.component.ts</context>
-          <context context-type="linenumber">14</context>
+          <context context-type="sourcefile">src/app/utils/servicos.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8412460871078084150" datatype="html">
+        <source>Preparação de profissionais nos pilares de segurança em AWS, boas práticas de segurança em CI/CD e desenvolvimento seguro</source>
+        <target>Preparation of professionals in security on AWS, ideal security practices in CI/CD and secure development</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/utils/servicos.ts</context>
+          <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1810979922057689405" datatype="html">
         <source>Preparação de profissionais nos pilares:</source>
-				<target>Preparation of professionals in:</target>
+        <target>Preparation of professionals in:</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/servicos/servicos.component.ts</context>
-          <context context-type="linenumber">16</context>
+          <context context-type="sourcefile">src/app/utils/servicos.ts</context>
+          <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4013101850095257793" datatype="html">
         <source>- Segurança em AWS
               - Boas práticas de segurança em CI/CD
               - Desenvolvimento seguro</source>
-				<target>- Security on AWS
+        <target>- Security on AWS
               - Ideal security practices in CI/CD
               - Secure development</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/servicos/servicos.component.ts</context>
-          <context context-type="linenumber">17,19</context>
+          <context context-type="sourcefile">src/app/utils/servicos.ts</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2322889064953605385" datatype="html">
+        <source>Implementação de segurança e apoio em melhorias em ambientes com modelos de desenvolvimento e entrega continua (CI/CD - Devops)</source>
+        <target>Implementation of security and support for improvements in environments with continuous development and delivery models (CI/CD - Devops)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/utils/servicos.ts</context>
+          <context context-type="linenumber">16</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2973418785008960924" datatype="html">
         <source>Implementação de segurança e apoio em melhorias em ambientes com modelos de desenvolvimento e entrega continua (CI/CD - Devops), atuando com foco em:</source>
-				<target>Implementation of security and support for improvements in environments with continuous development and delivery models (CI/CD - Devops), focusing on:</target>
+        <target>Implementation of security and support for improvements in environments with continuous development and delivery models (CI/CD - Devops), focusing on:</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/servicos/servicos.component.ts</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="sourcefile">src/app/utils/servicos.ts</context>
+          <context context-type="linenumber">17</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7209735419265897992" datatype="html">
-        <source>- Estruturação e implementação de segurança em esteiras de desenvolvimento (CI/CD) 
+      <trans-unit id="3716807107172702129" datatype="html">
+        <source>- Estruturação de segurança em esteiras de desenvolvimento (CI/CD) 
               - Análise de segurança em novos projetos e assessment de segurança em arquiteturas
               - Criação de estrutura de resposta à incidentes automatizadas em recursos AWS</source>
-				<target>- Structuring and implementing security on developing CI/CD
+        <target>- Structuring and implementing security on developing CI/CD
               - Security analysis in new projects and security assessment in architectures
               - Creation of automated incident response framework on AWS resources</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/servicos/servicos.component.ts</context>
-          <context context-type="linenumber">25,27</context>
+          <context context-type="sourcefile">src/app/utils/servicos.ts</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="28860508960937602" datatype="html">
+        <source>Identificação de riscos e vulnerabilidades em produtos e serviços, através de testes de intrusão (pentest)</source>
+        <target>Identification of risks and vulnerabilities in products and services, through intrusion tests (pentest)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/utils/servicos.ts</context>
+          <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1317900977096690512" datatype="html">
         <source>Identificação de riscos e vulnerabilidades em produtos e serviços, através de testes de intrusão (pentest), e também apoio no acompanhamento e e correção de vulnerabilidades encontradas através de gestão de vulnerabilidades</source>
-				<target>Identification of risks and vulnerabilities in products and services, through intrusion tests (pentest), and also support in monitoring and correcting vulnerabilities found through vulnerability management</target>
+        <target>Identification of risks and vulnerabilities in products and services, through intrusion tests (pentest), and also support in monitoring and correcting vulnerabilities found through vulnerability management</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/servicos/servicos.component.ts</context>
-          <context context-type="linenumber">32</context>
+          <context context-type="sourcefile">src/app/utils/servicos.ts</context>
+          <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
       <!-- index.html não suportado pelo i18n -->
