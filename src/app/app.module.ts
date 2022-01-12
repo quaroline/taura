@@ -8,6 +8,16 @@ import { ClientesComponent } from './clientes/clientes.component';
 import { ServicosComponent } from './servicos/servicos.component';
 import { ContatoComponent } from './contato/contato.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { WpServicosComponent } from './wp-servicos/wp-servicos.component';
+import { RouterModule, Routes } from '@angular/router';
+import { WpErrorComponent } from './wp-error/wp-error.component';
+import { WpHomeComponent } from './wp-home/wp-home.component';
+
+const routes: Routes = [
+  { path: '', component: WpHomeComponent },
+  { path: 'services', component: WpServicosComponent },
+  { path: '**', component: WpErrorComponent }
+];
 
 @NgModule({
   declarations: [
@@ -16,14 +26,18 @@ import { ReactiveFormsModule } from '@angular/forms';
     ApresentacaoComponent,
     ClientesComponent,
     ServicosComponent,
-    ContatoComponent
+    ContatoComponent,
+    WpServicosComponent,
+    WpHomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
+  exports: [RouterModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
