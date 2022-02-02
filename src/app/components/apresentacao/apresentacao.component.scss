@@ -13,7 +13,6 @@ a:hover {
 
 .apresentacao {
     width: 100.6%;
-    margin-top: -1rem;
 }
 
 .relative {
@@ -284,10 +283,5 @@ $transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 
     #apresentacao_imagem {
         visibility: hidden;
-    }
-
-    .apresentacao {
-        margin-top: -1rem;
-        margin-bottom: -15rem;
     }
 }

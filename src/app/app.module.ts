@@ -6,7 +6,6 @@ import { ApresentacaoComponent } from './components/apresentacao/apresentacao.co
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ClientesComponent } from './components/clientes/clientes.component';
 import { ServicosComponent } from './components/servicos/servicos.component';
-import { ContatoComponent } from './components/contato/contato.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { WpServicosComponent } from './pages/wp-servicos/wp-servicos.component';
 import { RouterModule, Routes } from '@angular/router';
@@ -27,7 +26,6 @@ const routes: Routes = [
     ApresentacaoComponent,
     ClientesComponent,
     ServicosComponent,
-    ContatoComponent,
     WpServicosComponent,
     WpHomeComponent
   ],
