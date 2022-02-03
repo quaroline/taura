@@ -285,3 +285,9 @@ $transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
         display: none;
     }
 }
+
+@media (max-height: 700px) {
+    #apresentacao_imagem {
+        display: none;
+    }
+}

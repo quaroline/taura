@@ -19,6 +19,7 @@ export class ApresentacaoComponent implements AfterViewInit {
     ] as HTMLElement[];
 
     this.alterarPropriedades();
+    this.manipularMargemApresentacao();
   }
 
   certificacoes = [
@@ -31,26 +32,38 @@ export class ApresentacaoComponent implements AfterViewInit {
   @HostListener('window:resize', ['$event'])
   onResize() {
     this.alterarPropriedades();
+    this.manipularMargemApresentacao();
+  }
+
+  manipularMargemApresentacao() {
+    this.backupElementosDeletaveis[0].style.marginTop = window.innerHeight > 905 ? "-7rem" : "0";
+  }
+
+  manipularElementosEmTelaComResolucaoAlta(): void {
+    this.backupElementosDeletaveis[0]?.classList.remove('container');
+
+    this.backupElementosDeletaveis[0]?.classList.add('row');
+    this.backupElementosDeletaveis[1]?.classList.add('col-md-2');
+    this.backupElementosDeletaveis[2]?.classList.add('col-md-3', 'relative');
+
+    this.backupElementosDeletaveis[2]?.children[0].classList.add('vertical-center');
+  }
+
+  manipularElementosEmTelaComResolucaoBaixa(): void {
+    this.backupElementosDeletaveis[0]?.classList.add('container');
+    
+    this.backupElementosDeletaveis[0]?.classList.remove('row');
+    this.backupElementosDeletaveis[1]?.classList.remove('col-md-2');
+    this.backupElementosDeletaveis[2]?.classList.remove('col-md-3', 'relative');
+
+    this.backupElementosDeletaveis[2]?.children[0].classList.remove('vertical-center');
   }
 
   alterarPropriedades(): void {
-    if (window.innerWidth > 1200) {
-      this.backupElementosDeletaveis[0]?.classList.remove('container');
-      this.backupElementosDeletaveis[0]?.classList.add('row');
-
-      this.backupElementosDeletaveis[1]?.classList.add('col-md-2');
-
-      this.backupElementosDeletaveis[2]?.classList.add('col-md-3', 'relative');
-      this.backupElementosDeletaveis[2]?.children[0].classList.add('vertical-center');
-    } else {
-      this.backupElementosDeletaveis[0]?.classList.add('container');
-      this.backupElementosDeletaveis[0]?.classList.remove('row');
-
-      this.backupElementosDeletaveis[1]?.classList.remove('col-md-2');
-
-      this.backupElementosDeletaveis[2]?.classList.remove('col-md-3', 'relative');
-      this.backupElementosDeletaveis[2]?.children[0].classList.remove('vertical-center');
-    }
+    if (window.innerWidth > 1200 && window.innerHeight > 700)
+      this.manipularElementosEmTelaComResolucaoAlta();
+    else
+      this.manipularElementosEmTelaComResolucaoBaixa();
   }
 
   props: any = { 'width': '100px' };
