@@ -1,29 +1,34 @@
-<br><br>
-<div class="row">
-    <div class="col-md-12 pb-2 text-center">
-        <h2><b i18n>Nossos Serviços</b></h2>
-    </div>
+<div class="pb-2 text-center">
+    <h2><b i18n>Nossos Serviços</b></h2>
 </div>
-<div class="col d-flex-2 justify-content-center">
-    <div class="card" *ngFor="let servico of servicos">
-        <div class="text-center card-body">
-            <h5 class="card-title">
-                <b>
-                    {{ servico.titulo }}
-                </b>
-            </h5>
-            <p class="card-text">{{ servico.descricao }}</p>
-        </div>
-        <div class="card-footer">
-            <div class="text-center">
-                <i *ngIf="servico.icone" style="color:#ff5400;" class="{{ servico.icone }} icones-grandes"></i>
+
+<div *ngIf="servicos" class="text-center">
+    <carousel
+        [autoplay]="true"
+        [loop]="true"
+        [autoplayInterval]="2000"
+        [pauseOnHover]="true"
+        [dots]="false"
+        [arrows]="false"
+        [arrowsOutside]="false"
+        [cellsToShow]="cellsToShow"
+        [cellWidth]="'100%'"
+        [height]="350">
+        <div class="carousel-cell" *ngFor="let servico of servicos" [id]="servico.id">
+            <div class="product-card">
+                <div class="text-center">
+                    <h5>{{ servico.titulo }}</h5>
+                    <p>{{ servico.descricao }}</p>
+                    <div class="icon mx-auto">
+                        <i class="{{ servico.icone }}"></i>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="row button">
-    <div class="col text-center" [routerLink]="'/services'">
-        <button class="btn btn-warning">
+    </carousel>
+
+    <div class="pt-2">
+        <button class="btn btn-warning" [routerLink]="'/services'">
             <b>Saiba Mais</b>
         </button>
     </div>

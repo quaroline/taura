@@ -1,81 +1,59 @@
 $blue: #071a66;
 $orange: #ff5400;
-$light-gray: #f8f8f8;
-
-.icones-grandes {
-    font-size: 2.5rem;
-    color: $blue;
-}
+$light: #f8f8f8;
 
 .button {
     cursor: pointer!important;
     z-index: 10;
 }
 
-hr {
-    width: 5rem;
-}
-
-span {
-    font-size: 1.1rem;
-}
-
-.d-flex-2 {
-    display: flex!important;
-}
-
-.fa-question-circle {
-    color: $orange!important;
-    font-size: 1rem;
-}
-
-.card-footer {
-    background-color: $light-gray;
-    border: 0;
-    margin-bottom: 1rem;
-}
-
-.card {
-    display: inline-block!important;
-    max-width: 20rem;
-    margin: 0 1.5rem 1.5rem 0;
-    background-color: $light-gray;
-    border: 0;
-    border-radius: 5px;
-    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: all 0.3s ease-in-out;
-}
-
-.card::after {
-    content: "";
-    border-radius: 5px;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
+carousel {
     height: 100%;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.card:hover {
-    -webkit-transform: scale(1.05, 1.05);
-    transform: scale(1.05, 1.05);
+.product-card {
+    padding: 1rem;
+    margin: 1rem;
+
+    background-color: white;
+    border-radius: .5rem;
+
+    box-shadow: 0 0 3px rgb(60 72 88 / 15%)
 }
   
-.card:hover::after {
-    opacity: 1;
+.product-card::before {
+    content: ' ';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: .5rem;
 }
 
-.card-text {
-    white-space: pre-line;
+.product-card:hover::before { opacity: 1; }
+
+.product-card:hover {
+    box-shadow: 0 10px 25px rgb(60 72 88 / 15%);
+    transition: box-shadow 500ms;
+
+    h5 { color: $blue; }
+    p { color: $orange; }
 }
 
-@media (max-width: 768px) {
-    .d-flex-2 {
-        display: block!important;
-    }
+.icon {
+    width: 4.2rem;
+    height: 4.2rem;
+
+    margin: .8rem;
+    padding: .8rem;
+    border-radius: .5rem;
+
+    font-size: 1.866rem;
+    color: $orange;
+}
+
+.text-center {
+    h5 { font-weight: 600; padding: .8rem; }
+
+    p { font-weight: 400; padding: 0; }
 }
