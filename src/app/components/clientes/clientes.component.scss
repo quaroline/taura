@@ -1,7 +1,9 @@
+@import "./../../../assets/vars";
+
 img {
     filter: grayscale(100%) saturate(100%);
     -webkit-filter: grayscale(100%) saturate(100%);
-    transition: 0.2s;
+    transition: $transition;
 }
 
 img:hover {

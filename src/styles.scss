@@ -1,20 +1,9 @@
-$orange: #ff5400;
-$blue: #071a66;
-$lightGrey: #d9d9d9;
-$grey: #333;
+@import "./assets/vars";
 
-body {
-    font-family: 'Mulish', sans-serif;
-}
+body { font-family: 'Mulish', sans-serif; }
+html, body { height: 100%; }
 
-html,
-body {
-    height: 100%;
-}
-
-p, span, h1, h2, h3, h4, h5  {
-    cursor: default;
-}
+p, span, h1, h2, h3, h4, h5  { cursor: default; }
 
 #wrap {
     min-height: 100%;
@@ -23,37 +12,23 @@ p, span, h1, h2, h3, h4, h5  {
     margin: 0 auto -283px;
 }
 
-#push {
-    height: 283px;
-}
+#push { height: 283px; }
 
-h1, h2, h3 {
-    font-family: 'Signika Negative', sans-serif;
-}
+h1 { font-size: 3em; }
+h1, h2, h3 { font-family: 'Signika Negative', sans-serif; }
 
-.row {
-    margin-right: 0!important;
-}
-
-h1 {
-    font-size: 3em;
-}
+.row { margin-right: 0!important; }
 
 ::-moz-selection { background: $blue; color: white; }
 ::selection { background: $blue; color: white; }
 
-footer *:not(a) {
-    cursor: default!important;
-}
-
-footer {
-    background-color: $grey;
-}
+footer *:not(a) { cursor: default!important; }
+footer { background-color: $grey; }
 
 a {
     text-decoration: none !important;
     color: $grey;
-    transition: 0.3s;
+    transition: $transition;
 }
 
 a:hover {

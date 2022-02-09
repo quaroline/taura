@@ -1,5 +1,4 @@
-$orange: #ff5400;
-$grey: #333;
+@import "./../../../assets/vars";
 
 #navbar-logo {
     content: url('../../../assets/img/logo.png');
@@ -8,7 +7,7 @@ $grey: #333;
 
 #navbar-logo .scrolled {
     content: url('../../../assets/img/cachorro.png');
-    transition: background-image 200ms linear;
+    transition: background-image $transition linear;
 }
 
 .float-right span {
@@ -21,7 +20,7 @@ span {
     text-decoration: none !important;
     color: #333;
     font-weight: 400;
-    transition: font-weight color 0.3s;
+    transition: font-weight color $transition;
 }
 
 span:hover {
