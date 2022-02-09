@@ -100,8 +100,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="4702980276887303214" datatype="html">
-        <source>Treinamentos</source>
-        <source>Trainings</source>
+        <source>Arquitetura</source>
+        <source>Architecture</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/utils/servicos.ts</context>
           <context context-type="linenumber">4</context>

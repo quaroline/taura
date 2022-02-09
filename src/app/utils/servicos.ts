@@ -1,8 +1,8 @@
 export abstract class Servicos {         
     public static servicos: any[] = [
         {
-          id: 'treinamento',
-          titulo: $localize`Treinamentos`,
+          id: 'arquitetura',
+          titulo: $localize`Arquitetura`,
           icone: 'far fa-address-card',
           descricao: $localize`Preparação de profissionais nos pilares de segurança em AWS, boas práticas de segurança em CI/CD e desenvolvimento seguro`,
           descricao_completa: $localize`Preparação de profissionais nos pilares:`,
@@ -11,8 +11,8 @@ export abstract class Servicos {
             $localize`Desenvolvimento seguro`]
         },
         { 
-          id: 'devsecops',
-          titulo: 'DevSecOps', 
+          id: 'devops',
+          titulo: 'DevOps', 
           icone: 'fas fa-shield-alt',
           width: '20rem',
           descricao: $localize`Implementação de segurança e apoio em melhorias em ambientes com modelos de desenvolvimento e entrega continua (CI/CD - Devops)`,
@@ -22,8 +22,8 @@ export abstract class Servicos {
             $localize`Criação de estrutura de resposta à incidentes automatizadas em recursos AWS` ]
         },
         {
-          id: 'offsensiveSecurity',
-          titulo: 'Offensive Security',
+          id: 'seguranca',
+          titulo: 'Segurança',
           icone: 'fas fa-user-secret',
           descricao: $localize`Identificação de riscos e vulnerabilidades em produtos e serviços, através de testes de intrusão (pentest)`,
           descricao_completa: $localize`Identificação de riscos e vulnerabilidades em produtos e serviços, através de testes de intrusão (pentest), e também apoio no acompanhamento e correção de vulnerabilidades encontradas através de gestão de vulnerabilidades`
