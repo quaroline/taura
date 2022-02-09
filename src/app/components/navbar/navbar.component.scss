@@ -3,7 +3,7 @@ $grey: #333;
 
 #navbar-logo {
     content: url('../../../assets/img/logo.png');
-    width: 30%;
+    max-width: 192px;
 }
 
 #navbar-logo .scrolled {
@@ -15,9 +15,7 @@ $grey: #333;
     padding-right: 1.5rem;
 }
 
-nav {
-    z-index: 99999;
-}
+nav { z-index: 99999; }
 
 span {
     text-decoration: none !important;

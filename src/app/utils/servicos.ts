@@ -26,7 +26,7 @@ export abstract class Servicos {
           titulo: 'Offensive Security',
           icone: 'fas fa-user-secret',
           descricao: $localize`Identificação de riscos e vulnerabilidades em produtos e serviços, através de testes de intrusão (pentest)`,
-          descricao_completa: $localize`Identificação de riscos e vulnerabilidades em produtos e serviços, através de testes de intrusão (pentest), e também apoio no acompanhamento e e correção de vulnerabilidades encontradas através de gestão de vulnerabilidades`
+          descricao_completa: $localize`Identificação de riscos e vulnerabilidades em produtos e serviços, através de testes de intrusão (pentest), e também apoio no acompanhamento e correção de vulnerabilidades encontradas através de gestão de vulnerabilidades`
         }
     ];
 }

@@ -172,7 +172,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="1317900977096690512" datatype="html">
-        <source>Identificação de riscos e vulnerabilidades em produtos e serviços, através de testes de intrusão (pentest), e também apoio no acompanhamento e e correção de vulnerabilidades encontradas através de gestão de vulnerabilidades</source>
+        <source>Identificação de riscos e vulnerabilidades em produtos e serviços, através de testes de intrusão (pentest), e também apoio no acompanhamento e correção de vulnerabilidades encontradas através de gestão de vulnerabilidades</source>
         <target>Identification of risks and vulnerabilities in products and services, through intrusion tests (pentest), and also support in monitoring and correcting vulnerabilities found through vulnerability management</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/utils/servicos.ts</context>
