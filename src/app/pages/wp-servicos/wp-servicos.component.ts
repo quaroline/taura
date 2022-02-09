@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Servicos } from 'src/app/utils/servicos';
 
 @Component({
@@ -6,12 +6,12 @@ import { Servicos } from 'src/app/utils/servicos';
   templateUrl: './wp-servicos.component.html',
   styleUrls: ['./wp-servicos.component.scss']
 })
-export class WpServicosComponent implements OnInit {
-
-  constructor() { }
+export class WpServicosComponent implements AfterViewInit {
 
   servicos = Servicos.servicos;
-
-  ngOnInit(): void {}
+  
+  constructor() { }
+  
+  ngAfterViewInit(): void {}
 
 }

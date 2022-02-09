@@ -1,35 +1,24 @@
-<div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-        <carousel
-            [objectFit]="'contain'"
-            [height]="900"
-            [cellWidth]="'100%'"
-            [arrows]="false"
-            [dots]="true"
-            [loop]="true">
-
-            <div class="carousel-cell" *ngFor="let servico of servicos">
-                <div class="row">
-                    <div class="col-md-2 my-auto text-center" id="white-space">
-                        <i *ngIf="servico.icone" class="{{ servico.icone }}"></i>
-                    </div>
-                    <div class="col-md-10">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum vulputate nisl sed tristique. Vivamus a elit libero. Vestibulum laoreet dui id purus imperdiet lobortis. Donec nunc mi, gravida sit amet vestibulum a, rutrum at urna. Nullam vehicula suscipit nulla nec maximus. Praesent sodales dui sapien, in mattis urna rutrum ac. Ut laoreet consectetur pharetra. Maecenas quis commodo ante. Nulla fringilla augue velit, tristique elementum velit ultrices et. Integer pharetra sodales justo, at semper ante. Vestibulum venenatis dignissim risus condimentum imperdiet. Maecenas id nibh aliquam, pharetra erat vel, faucibus leo. Aenean eu elit sed ex placerat porta egestas quis arcu. Morbi hendrerit, orci et viverra facilisis, neque ante consectetur orci, eget condimentum sapien nisi vitae orci. Aliquam ac quam lectus.<br><br>
-                            Curabitur eget eros eu velit consequat ultrices. Proin a aliquam ante, eu efficitur lorem. Duis dapibus ac libero a sodales. Fusce euismod in purus quis placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse sodales dapibus eros, in cursus tellus laoreet euismod. Cras pharetra vestibulum erat ac feugiat.<br><br>
-                            Sed eu facilisis mi. Nam efficitur facilisis metus et egestas. Duis vel congue sapien, dignissim fermentum lorem. In feugiat tellus metus, ut semper tellus finibus at. Integer at iaculis nibh. Aliquam faucibus gravida tristique. Quisque non condimentum magna. Aenean luctus, mauris vel condimentum volutpat, lectus diam viverra quam, vulputate rutrum massa sapien at sapien. Integer volutpat mauris dolor, a varius diam vulputate in.<br><br>
-                            Morbi nec ullamcorper lacus, eget congue lectus. Etiam nisl augue, ullamcorper non felis placerat, fringilla pretium sem. Nullam eget tellus sit amet ex aliquam blandit. Morbi pulvinar quis eros at euismod. Aenean efficitur, arcu posuere posuere consequat, nibh ipsum viverra mi, quis ultricies tellus nulla et nunc. Duis sit amet felis dui. Integer nulla nibh, pellentesque eu lacus sit amet, dictum facilisis lorem. Sed condimentum facilisis libero, eget euismod ligula sodales a. Nunc placerat iaculis velit, sed gravida nisi facilisis sed. In in urna mi. Ut vitae mauris condimentum, semper nunc a, suscipit urna. Nulla non arcu a elit hendrerit consequat quis vel felis. Nullam fermentum venenatis nibh eu ornare. Curabitur vitae nisl ultricies, euismod turpis vitae, rhoncus tortor. Aliquam posuere lacus lorem, a pulvinar ipsum pulvinar et. Quisque rutrum eget justo at gravida.<br><br>
-                            Proin fringilla molestie mauris et convallis. Proin at ex venenatis, dapibus ex a, rhoncus risus. Integer tincidunt, sem in rhoncus dapibus, erat justo vestibulum enim, sed venenatis arcu est quis urna. Morbi a bibendum dolor. Ut condimentum, felis vel pretium feugiat, lectus ligula blandit justo, eget sodales massa neque sed massa. Vivamus vitae pretium libero. Fusce laoreet velit lectus, id aliquam elit tristique vitae. Cras ut lectus et neque blandit placerat vitae eget mauris. Sed convallis bibendum purus, sit amet condimentum purus rutrum ut. Donec et ultrices lorem, eget viverra sem. Vestibulum sit amet est lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed quis interdum eros.
-                        </p>
-                        <p>{{ servico.descricao_completa }}</p>
-                        <div *ngIf="servico.itens">
-                            <p *ngFor="let item of servico.itens">- {{ item }}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </carousel>
+<div class="container mb-3">
+    <div class="row mb-3">
+        <div class="col-md-2"></div>
+        <div class="col-md-9">
+            <h4>Um resumo do que nós fazemos por aqui!</h4>
+        </div>
     </div>
-    <div class="col-md-2"></div>
+    <div class="row  mt-3" *ngFor="let servico of servicos">
+        <div class="col-md-3 servicos">
+            <i class="{{ servico.icone }}"></i>
+        </div>
+        <div class="col-md-6">
+            <h5>
+                <b>{{ servico.titulo }}</b>
+            </h5>
+            <p>{{ servico.descricao_completa }}</p>
+            <ul>
+                <li *ngFor="let item of servico.itens">
+                    {{ item }}
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>

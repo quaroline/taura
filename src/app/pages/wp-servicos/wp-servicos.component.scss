@@ -1,14 +1,22 @@
 $orange: #ff5400;
+$grey: #333;
 
-#carousel {
-    height: 50vw;
+a { 
+    color: $grey;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover { 
+    color: $orange!important;
+    cursor: pointer;
+}
+
+.servicos { 
+    text-align: right; 
+    margin-right: .5rem;    
+    border-right: $orange 1px solid;
 }
 
 i {
-    color: $orange;
-    font-size: 6rem;
-}
-
-#white-space {
-    border-right: 3px solid $orange;
+    font-size: 3rem;
 }
