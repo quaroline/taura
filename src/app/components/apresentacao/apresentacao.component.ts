@@ -19,7 +19,6 @@ export class ApresentacaoComponent implements AfterViewInit {
     ] as HTMLElement[];
 
     this.alterarPropriedades();
-    this.manipularMargemApresentacao();
   }
 
   certificacoes = [
@@ -32,11 +31,6 @@ export class ApresentacaoComponent implements AfterViewInit {
   @HostListener('window:resize', ['$event'])
   onResize() {
     this.alterarPropriedades();
-    this.manipularMargemApresentacao();
-  }
-
-  manipularMargemApresentacao() {
-    this.backupElementosDeletaveis[0].style.marginTop = window.innerHeight > 905 ? "-7rem" : "0";
   }
 
   manipularElementosEmTelaComResolucaoAlta(): void {
