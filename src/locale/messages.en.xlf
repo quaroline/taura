@@ -52,7 +52,7 @@
       </trans-unit>
       <trans-unit id="2332180001770133395" datatype="html">
         <source>Nome</source>
-        <source>Name</source>
+        <target>Name</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/contato/contato.component.html</context>
           <context context-type="linenumber">15</context>
@@ -93,18 +93,18 @@
       </trans-unit>
       <trans-unit id="3621976955062663862" datatype="html">
         <source>Página não encontrada</source>
-        <source>Not Found</source>
+        <target>Not Found</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/wp-error/wp-error.component.html</context>
           <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4702980276887303214" datatype="html">
+      <trans-unit id="6060772027673157022" datatype="html">
         <source>Arquitetura</source>
-        <source>Architecture</source>
+        <target>Architecture</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/utils/servicos.ts</context>
-          <context context-type="linenumber">4</context>
+          <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8412460871078084150" datatype="html">
@@ -123,16 +123,28 @@
           <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4013101850095257793" datatype="html">
-        <source>- Segurança em AWS
-              - Boas práticas de segurança em CI/CD
-              - Desenvolvimento seguro</source>
-        <target>- Security on AWS
-              - Ideal security practices in CI/CD
-              - Secure development</target>
+      <trans-unit id="6724415122601240295" datatype="html">
+        <source>Segurança em AWS</source>
+        <target>Security on AWS</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/utils/servicos.ts</context>
-          <context context-type="linenumber">8,10</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1215170421269344417" datatype="html">
+        <source>Boas práticas de segurança em CI/CD</source>
+        <target>Ideal security practices in CI/CD</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/utils/servicos.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8470224362178844101" datatype="html">
+        <source>Desenvolvimento seguro</source>
+        <target>Secure development</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/utils/servicos.ts</context>
+          <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2322889064953605385" datatype="html">
@@ -151,16 +163,36 @@
           <context context-type="linenumber">17</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3716807107172702129" datatype="html">
-        <source>- Estruturação de segurança em esteiras de desenvolvimento (CI/CD) 
-              - Análise de segurança em novos projetos e assessment de segurança em arquiteturas
-              - Criação de estrutura de resposta à incidentes automatizadas em recursos AWS</source>
-        <target>- Structuring and implementing security on developing CI/CD
-              - Security analysis in new projects and security assessment in architectures
-              - Creation of automated incident response framework on AWS resources</target>
+      <trans-unit id="2698728170684742205" datatype="html">
+        <source>Análise de segurança em novos projetos e assessment de segurança em arquiteturas</source>
+        <target>Security analysis in new projects and security assessment in architectures</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/utils/servicos.ts</context>
-          <context context-type="linenumber">18,20</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2899062879093911289" datatype="html">
+        <source>Estruturação de segurança em esteiras de desenvolvimento (CI/CD)</source>
+        <target>Structuring and implementing security on developing CI/CD</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/utils/servicos.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2698728170684742205" datatype="html">
+        <source>Análise de segurança em novos projetos e assessment de segurança em arquiteturas</source>
+        <target>Security analysis in new projects and security assessment in architectures</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/utils/servicos.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8549756290689776636" datatype="html">
+        <source>Criação de estrutura de resposta à incidentes automatizadas em recursos AWS</source>
+        <target>Creation of automated incident response framework on AWS resources</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/utils/servicos.ts</context>
+          <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
       <trans-unit id="28860508960937602" datatype="html">
@@ -171,12 +203,36 @@
           <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1317900977096690512" datatype="html">
+      <trans-unit id="9173407388587562556" datatype="html">
         <source>Identificação de riscos e vulnerabilidades em produtos e serviços, através de testes de intrusão (pentest), e também apoio no acompanhamento e correção de vulnerabilidades encontradas através de gestão de vulnerabilidades</source>
         <target>Identification of risks and vulnerabilities in products and services, through intrusion tests (pentest), and also support in monitoring and correcting vulnerabilities found through vulnerability management</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/utils/servicos.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8503635262425813916" datatype="html">
+        <source>Um resumo do que nós fazemos por aqui!</source>
+        <target>A brief explanation of what we do around here!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/wp-servicos/wp-servicos.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1246022757335429434" datatype="html">
+        <source>Segurança</source>
+        <target>Security</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/utils/servicos.ts</context>
           <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1832738573628383531" datatype="html">
+        <source>Saiba Mais</source>
+        <target>More Info</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/servicos/servicos.component.html</context>
+          <context context-type="linenumber">32</context>
         </context-group>
       </trans-unit>
       <!-- index.html não suportado pelo i18n -->

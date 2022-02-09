@@ -3,7 +3,7 @@ export abstract class Servicos {
         {
           id: 'arquitetura',
           titulo: $localize`Arquitetura`,
-          icone: 'far fa-address-card',
+          icone: 'fas fa-drafting-compass',
           descricao: $localize`Preparação de profissionais nos pilares de segurança em AWS, boas práticas de segurança em CI/CD e desenvolvimento seguro`,
           descricao_completa: $localize`Preparação de profissionais nos pilares:`,
           itens: [ $localize`Segurança em AWS`,
@@ -13,7 +13,7 @@ export abstract class Servicos {
         { 
           id: 'devops',
           titulo: 'DevOps', 
-          icone: 'fas fa-shield-alt',
+          icone: 'fas fa-cogs',
           width: '20rem',
           descricao: $localize`Implementação de segurança e apoio em melhorias em ambientes com modelos de desenvolvimento e entrega continua (CI/CD - Devops)`,
           descricao_completa: $localize`Implementação de segurança e apoio em melhorias em ambientes com modelos de desenvolvimento e entrega continua (CI/CD - Devops), atuando com foco em:`,
@@ -23,8 +23,8 @@ export abstract class Servicos {
         },
         {
           id: 'seguranca',
-          titulo: 'Segurança',
-          icone: 'fas fa-user-secret',
+          titulo: $localize`Segurança`,
+          icone: 'fas fa-shield-alt',
           descricao: $localize`Identificação de riscos e vulnerabilidades em produtos e serviços, através de testes de intrusão (pentest)`,
           descricao_completa: $localize`Identificação de riscos e vulnerabilidades em produtos e serviços, através de testes de intrusão (pentest), e também apoio no acompanhamento e correção de vulnerabilidades encontradas através de gestão de vulnerabilidades`
         }
